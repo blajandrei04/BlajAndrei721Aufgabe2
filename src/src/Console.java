@@ -22,7 +22,7 @@ public class Console {
             System.out.println("""
                     1. Alles anschreiben
                     2. Produkt CRUD
-                    3. Kunde CRUD
+                    3. Charaktere CRUD
                     0. Exit""");
 
             option = sc.nextInt();
@@ -56,12 +56,12 @@ public class Console {
                 case 3:
                 {
                     System.out.println("""
-                            1. Neuer Kunde hinzufugen
-                            2. Alle Kunden sehen
-                            3. Einen bestimmten Kunden finden
-                            4. Einen Kunden aktualisieren
-                            5. Einen Kunden loschen
-                            6. Kunden nach Ort filtrieren
+                            1. Neuer Charakter hinzufugen
+                            2. Alle Charaktere sehen
+                            3. Einen bestimmten Charakter finden
+                            4. Einen Charakter aktualisieren
+                            5. Einen Charakter loschen
+                            6. Charaktere nach Ort filtrieren
                             0. Exit""");
                     int crudOption = sc.nextInt();
                     sc.nextLine();
@@ -98,13 +98,13 @@ public class Console {
     }
 
     public void initialiseData(Repository<Charaktere> kundeRepository, Repository<Produkte> produktRepository) {
-        Produkte produkt1 = new Produkte("50kg Dumbbell",400,"Fruhling");
-        Produkte produkt2 = new Produkte("25kg Dumbbell",200,"Fruhling");
-        Produkte produkt3 = new Produkte("10kg Dumbbell",100,"Sommer");
-        Produkte produkt4 = new Produkte("Handtuch",70,"Sommer");
-        Produkte produkt5 = new Produkte("Proteindose",150,"Herbst");
-        Produkte produkt6 = new Produkte("Carbohydratpaket",200,"Winter");
-        Produkte produkt7 = new Produkte("Wasserflasche",100,"Winter");
+        Produkte produkt1 = new Produkte("50kg Dumbbell",400,"Zalau");
+        Produkte produkt2 = new Produkte("25kg Dumbbell",200,"ClujNapoca");
+        Produkte produkt3 = new Produkte("10kg Dumbbell",100,"Timisoara");
+        Produkte produkt4 = new Produkte("Handtuch",70,"Oradea");
+        Produkte produkt5 = new Produkte("Proteindose",150,"Bucuresti");
+        Produkte produkt6 = new Produkte("Carbohydratpaket",200,"Sibiu");
+        Produkte produkt7 = new Produkte("Wasserflasche",100,"Dej");
 
         produktRepository.addElement(produkt1);
         produktRepository.addElement(produkt2);
