@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Controller {
@@ -86,7 +85,7 @@ public class Controller {
         System.out.println("ID der Charakter: ");
         int id = sc.nextInt();
         sc.nextLine();
-        service.deleteKunde(id);
+        service.deleteCharakter(id);
     }
     public void kundenNachOrtFiltrieren(){
         Scanner sc = new Scanner(System.in);
